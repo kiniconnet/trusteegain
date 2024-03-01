@@ -3,6 +3,9 @@ import style from "./header.module.css"
 
 // External export
 import { IoMdArrowForward } from "react-icons/io";
+import { Link } from 'react-router-dom';
+import Courses from '../../pages/Courses/Courses';
+import About from '../../pages/About/About';
 
 
 const Header = () => {
@@ -19,11 +22,11 @@ const Header = () => {
 
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
                 <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                    Get started
+                   <Link to="/courses" element={<Courses />}> Get started </Link>
                     <IoMdArrowForward className='text-4'/>
                 </a>
                 <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-slate-200 focus:ring-4 focus:ring-gray-400">
-                    Learn more
+                    <Link to="/about" element={<About />} > Learn more </Link>
                 </a>  
             </div>
         </div>
