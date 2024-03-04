@@ -14,6 +14,7 @@ const Header = () => {
     <>
         <section class="bg-center bg-no-repeat bg-cover bg-[url('./assets/background.jpeg')] bg-slate-800 bg-blend-multiply ">
             <div className={mainHeader}>
+                
                  <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
                     We invest in the world’s potential
                  </h1>
